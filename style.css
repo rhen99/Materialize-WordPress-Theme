@@ -1,0 +1,83 @@
+/*
+Theme Name: Lags Thene 1
+Theme URI: lagsdevs.com
+Author: LagsDevs
+Author URI: http://lagsdevs.com/
+Description: This is just a simple theme with Materialize.css
+*/
+main {
+	min-height: calc(100vh - 30px);
+}
+.post-thumbnail {
+	width: 100%;
+}
+.post-thumbnail img {
+	width: 100%;
+}
+footer {
+	height: 30px;
+}
+ul#mobile-demo {
+	padding-top: 40px;
+}
+.dropdown-content li > a,
+.dropdown-content li > span {
+	color: #880e4f;
+}
+.card-image img {
+	width: 100%;
+	height: 100%;
+}
+.input-field input[type=text]:focus {
+	border-bottom: 1px solid #880e4f !important;
+	box-shadow: 0 1px 0 0 #880e4f !important;
+}
+.input-field textarea:focus {
+	border-bottom: 1px solid #880e4f !important;
+	box-shadow: 0 1px 0 0 #880e4f !important;
+}
+.comments {
+	margin-top: 30px;
+}
+.comments #respond {
+	margin-bottom: 30px;
+}
+.comment {
+	display: flex;
+	background-color: #f4f4f4;
+}
+.comment-image {
+	flex: 2;
+	position: relative;
+}
+.comment-image img {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	left: 10%;
+	top: 10%;
+}
+.comment-inner {
+	flex: 10;
+}
+.comment .comment-meta {
+	display: flex;
+}
+.comment .comment-meta h6 {
+	flex: 9;
+	color: #880e4f;
+	font-size: 1.2rem;
+}
+.comment .comment-meta strong {
+	flex: 2;
+}
+ul.children {
+	margin-top: 0;
+}
+ul.children .comment .comment-image img {
+	width: 50px;
+	height: 50px;
+}
+.sidebar > div ul li a {
+	color: #880e4f;
+}
