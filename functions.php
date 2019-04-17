@@ -1,4 +1,6 @@
 <?php
+//Requires
+require_once(get_template_directory().'/inc/customizer.php');
 require_once('class-materialize-navwalker.php');
 //Function for loading the assets
 function wp_importMyAssets(){

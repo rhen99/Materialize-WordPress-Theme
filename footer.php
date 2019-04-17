@@ -4,6 +4,10 @@
                     <?php endif; ?>
                 </div>
             </div>
+            <div class="posts-navigation">
+                <?php previous_posts_link(); ?>
+                <?php next_posts_link(); ?>
+            </div>
 </section>
     </main>
     <footer class="grey darken-3">

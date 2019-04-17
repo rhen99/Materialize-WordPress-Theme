@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?php bloginfo('name'); ?> | <?php is_front_page() ? bloginfo('description') : wp_title(); ?></title>
     <?php wp_head();?>
+    <style>
+        .showcase{
+            background: #333 url(<?php echo get_theme_mod('showcase_image'); ?>) no-repeat center center / cover;
+        }
+    </style>
 </head>
 <body <?php body_class(); ?>>
      <main>
@@ -36,8 +41,17 @@
                          ?>
                     </div>
                 </nav>
-            
-            
-        <section class="container">
+               <?php if(!is_singular()): ?>
+                 <section class="showcase">
+                    <div class="showcase-inner">
+                        <h1><?php echo get_theme_mod('showcase_heading', 'Showcase Heading') ?></h1>
+                        <p class="flow-text"><?php echo get_theme_mod('showcase_secondary', 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, corrupti.'); ?></p>
+                        <div class="action">
+                            <a href="#main-area" id="action" class="btn pink darken-4 white-text"><?php echo get_theme_mod('showcase_btn_text', 'Read More'); ?></a>
+                        </div>
+                    </div>
+                </section>
+               <?php endif; ?>
+        <section class="container" id="main-area">
               <div class="row">
         
